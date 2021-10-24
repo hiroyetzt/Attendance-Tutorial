@@ -7,8 +7,12 @@
                                'data-turbolink-track': 'reload' %>
     <%= javascript_include_tag 'application',
                                'data-turbolink-track': 'reload' %>
+    <%= render 'layouts/shim' %>
   </head>
   <body>
-    <%= yield %>
+    <%= render 'layouts/shim' %>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
